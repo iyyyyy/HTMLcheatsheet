@@ -1,0 +1,213 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="your description in not more than 160 words">
+		<meta name="author" content="iyobosaamadin">
+		<meta name="keywords" content="HTML, Tutorial, ceatsheet, beginners guide, etc">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>HTML cheat sheet</title>
+	</head>
+	<body>
+		<a href="blog.html">Go to Blog</a>
+		<p>check out my <a href="https://eastmanreference.com/complete-list-of-html-tags" target="blank">complete list of HTML tags</a> <br><br> <a href="The-Complete-HTML-Cheat-Sheet.pdf">I linked a pdf cheatsheet</a> </p>
+
+		<hr>
+
+		<!-- Headings -->
+		<h1>Heading one</h1>
+		<h2>Heading two</h2>
+		<h3>Heading three</h3>
+		<h4>Heading four</h4>
+		<h5>Heading five</h5>
+		<h6>Heading six</h6>
+		<h1 align="center"> title </h1>
+		<hr>
+
+		<!--Videos-->
+		<video src="video.mp4" poster="images/big bang.png" width="640" height="360" controls loop autoplay></video>
+		<br> <br>
+		<!-- YouTube Video
+		just go to the particular video on youtube, click on share, click on embed and copy the iframe linke then paste here.... -->
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/SmbzdwnpZZs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		<!-- iframes let you embed another website into your own website... if that other website allows it -->
+		<br>
+		<iframe src="file:///C:/Users/USER/Desktop/HTML%20cheatsheet/blog.html" frameborder="0" width="800" height="600">sorry</iframe>
+
+		<!-- Image -->
+		<p align="center"><a href="images/download.jpg">
+			<img border="1" src="images/download.jpg" alt="my sample image" title="cute bird" width="200" height="#"> 
+			</a> </p>
+			<br><br><br>
+
+		<!--Audio-->
+		<audio controls autoplay src="03. Cross Me.mp3" draggable="true"></audio>
+
+		<!-- paragraph -->
+		<P>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud <strong>exercitation ullamco laboris nisi ut aliquip ex ea commodo</strong>
+			consequat. Duis aute irure dolor in <b>reprehenderit</b> in voluptate <em>velit esse
+			cillum dolore eu fugiat</em> nulla pariatur. <i>Excepteur sint occaecat cupidatat non</i>
+			proident, sunt in culpa qui officia <b><i>deserunt mollit anim id est laborum.</i></b>
+		</P>
+		<P>
+			Lorem ipsum dolor sit amet, <a href="google.com" target="_blank"> Google </a> consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</P>
+
+		<!-- Lists -->
+		<ul>
+			<li>List item 1</li>
+			<li>List item 2</li>
+			<li>List item 3</li>
+		</ul> 
+	<!-- for <ol>, the type could be type=A ,I ,i ,a ,1 -->
+		<ol type="1">
+			<li>List item 1</li>
+			<li>List item 2</li>
+				<ol type="i">
+					<li>List item 2</li>
+					<li>List item 2</li>
+				</ol>
+			<li>List item 3</li>
+		</ol>
+		<dl>
+			<dt>Apples</dt>
+			<dd>-They are red</dd>
+			<dt>Oranges</dt>
+			<dd>-They are Orange</dd>
+		</dl>
+
+		<!-- Table-->
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Age</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Brad</td>
+					<td>brad@blabla.com</td>
+					<td>35</td>
+				</tr>
+				<tr>
+					<td>Sara</td>
+					<td>Sara@blabla.com</td>
+					<td>45</td>
+				</tr>
+				<tr>
+					<td>Gold</td>
+					<td>Gold@blabla.com</td>
+					<td>25</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<hr>
+		<br>
+
+		<!--FORMS-->
+		<form action="process.php" method="POST">
+			<div>
+			  <label>first name</label>
+			  <input type="text" name="first-name" size="50" placeholder="Enter First Name">
+			</div>
+			<br>
+			<div>
+			  <label>last name</label>
+			  <input type="text" name="last-name">
+			</div>
+			<br>
+			<div>
+			  <label>Email</label>
+			  <input type="Email" name="Email">
+			</div>
+			<br>
+			<div>
+			  <label>Message</label>
+			  <textarea rows="10" cols="30" name="message"></textarea>
+			</div>
+			<br>
+			<div>
+			  <label>Gender</label>
+			  	<select name="gender">
+					<option value= "male">Male</option>
+					<option value= "Female">Female</option>
+					<option value= "Other">Other</option>
+				</select>
+			</div>
+			<br>
+			<div>
+				<label>Age</label>
+				<input type="number" name="age" value="30" min="" max="">
+			</div>
+			<br>
+			<div>
+				<label>Birthday</label>
+				<input type="date" name="Birthday">
+			</div>
+			<br>
+			<input type="submit" name="submit" value="Submit">
+			<br>
+			<br>
+			<button type="submit">Submit</button>
+		<div>
+		</form>
+		<br>
+		<form>
+			<fieldset>
+			<legend>Enter day you want to travel:</legend>
+			<input type="date" name="day"> 
+			Number of days: <input type="number" name="numdays" min="1" max="10">
+			<br><br>
+			Name: <input type="text">
+		</fieldset>
+		</form>
+	</div>
+		<br>
+
+		<!-- input-->
+		<br> <hr>
+		<p>check out my <a href="https://www.w3schools.com/html/html_form_input_types.asp">input types cheat sheet</a></p>
+		 <input type="text" placeholder="Enter your username">
+		 <input type="password" placeholder="Enter your password">
+		 <input type="range"> 
+		 <input type="file" name="">
+
+		 <input type="checkbox" name="">
+		 <input type="checkbox" name="">
+
+		 <label for="button 1"></label><input type="radio" name="btn">button 1</label> 
+		 <label for="button 2"><input type="radio" name="btn">button 2 </label>
+
+		 <textarea rows="10" cols="30"> Enter a paragraph </textarea>
+		 <hr>
+
+
+		<!-- Quotations -->
+		<blockquote cite="http://iyobosaamadin.com">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</blockquote>
+
+		<p> The <abbr title=" World Wide Web"> WWW </abbr> is awesome</p>
+
+		<p> <cite> HTML Crash Course </cite> by Brad Traversy</p>
+
+<div style="margin-top:500px"></div>
+	</body>
+</html>
